@@ -1,8 +1,5 @@
 # Find the prime numbers in an array
 
-# Ruby program to find the prime numbers 
-# from the array
-
 arr = [12,45,23,39,37];
 
 i = 0;
