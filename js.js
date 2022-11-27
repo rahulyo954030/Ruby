@@ -1,14 +1,33 @@
-// # Find the 3rd lowest number in an array
-arr = [12,12,45,23,39,37];
+// let arr = [1,2,2,3,4,3]
+  
+// let obj = {}
 
-arr.sort((a,b)=>a-b)
-// # [12, 12, 23, 37, 39, 45]
-
-let second = 0
-for(let i =0; i<arr.length; i++){
-    if(arr[i] != arr[0]){
-        second = arr[i]
-        break
+// for(let i=0; i<arr.length; i++){
+//     if(obj[arr[i]]==undefined){
+//         obj[arr[i]]=1
+//     }
+//     else{
+//         obj[arr[i]]++
+//     }
+    
+// }
+// let ans =[]
+// for(key in  obj){
+//     if(obj[key]==1){
+//         ans.push(key)
+//     }
+// }
+// console.log(ans);
+// global
+let global = 5
+function abc(){
+    
+    let outer =6
+    function dbc(){
+       return global+outer
+        
     }
+    console.log(dbc())
 }
-console.log(second); 
+
+abc()
